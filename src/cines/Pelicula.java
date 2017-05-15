@@ -16,7 +16,7 @@ public class Pelicula {
     private Genero genero;
     private Calificacion calificacion;
     
-    //metoo constructor
+    //metodo constructor
     
     public Pelicula(int anioEstreno, boolean disponible, int duracion, String nombre, String tituloOriginal, PaisDeOrigen paisDeOrigen, Genero genero, Calificacion calificacion){
         this.anioEstreno = anioEstreno;
