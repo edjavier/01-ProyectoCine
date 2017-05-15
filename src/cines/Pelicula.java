@@ -12,15 +12,21 @@ public class Pelicula {
     private Date fechaIngreso;
     private String nombre;
     private String tituloOriginal;
+    private PaisDeOrigen paisDeOrigen;
+    private Genero genero;
+    private Calificacion calificacion;
     
     //metoo constructor
     
-    public Pelicula(int anioEstreno, boolean disponible, int duracion, String nombre, String tituloOriginal){
+    public Pelicula(int anioEstreno, boolean disponible, int duracion, String nombre, String tituloOriginal, PaisDeOrigen paisDeOrigen, Genero genero, Calificacion calificacion){
         this.anioEstreno = anioEstreno;
         this.disponible = disponible;
         this.duracion = duracion;
         this.nombre = nombre;
         this.tituloOriginal = tituloOriginal;
+        this.paisDeOrigen = paisDeOrigen;
+        this.genero = genero;
+        this.calificacion = calificacion;
     }
     
     //metodos de seteo de cada atributo de la clase
@@ -71,5 +77,29 @@ public class Pelicula {
     
     public void setTituloOriginal(String tituloOriginal){
         this.tituloOriginal = tituloOriginal;
+    }
+    
+    public PaisDeOrigen getPaisDeOrigen(){
+        return this.paisDeOrigen;
+    }
+    
+    public void setPaisDeOrigen(PaisDeOrigen paisDeOrigen){
+        this.paisDeOrigen = paisDeOrigen;
+    }
+    
+    public Genero getGenero(){
+        return this.genero;
+    }
+    
+    public void setGenero(Genero genero){
+        this.genero = genero;
+    }
+    
+    public Calificacion getCalificacion(){
+        return this.calificacion;
+    }
+    
+    public void setCalificacion(Calificacion calificacion){
+        this.calificacion = calificacion;
     }
 }
