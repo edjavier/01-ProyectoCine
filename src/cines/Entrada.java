@@ -15,11 +15,12 @@ public class Entrada {
     
     //metodo constructor
     
-    public Entrada(Date fechaHoraFuncion, Date fechaHoraVenta, BigDecimal precioCobrado, int ticketNro){
+    public Entrada(Date fechaHoraFuncion, Date fechaHoraVenta, BigDecimal precioCobrado, int ticketNro, Funcion funcion){
         this.fechaHoraFuncion = fechaHoraFuncion;
         this.fechaHoraVenta = fechaHoraVenta;
         this.precioCobrado = precioCobrado;
         this.ticketNro = ticketNro;
+        this.funcion = funcion;
     }
     
     //metodos de seteo
