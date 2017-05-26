@@ -1,6 +1,7 @@
 package cines;
 
 import java.util.Date;
+import java.util.List;
 
 public class Pelicula {
     
@@ -15,10 +16,11 @@ public class Pelicula {
     private PaisDeOrigen paisDeOrigen;
     private Genero genero;
     private Calificacion calificacion;
+    private List<Funcion> funciones;
     
     //metodo constructor
     
-    public Pelicula(int anioEstreno, boolean disponible, int duracion, String nombre, String tituloOriginal, PaisDeOrigen paisDeOrigen, Genero genero, Calificacion calificacion){
+    public Pelicula(int anioEstreno, boolean disponible, int duracion, String nombre, String tituloOriginal, PaisDeOrigen paisDeOrigen, Genero genero, Calificacion calificacion, List<Funcion> funciones){
         this.anioEstreno = anioEstreno;
         this.disponible = disponible;
         this.duracion = duracion;
@@ -27,6 +29,7 @@ public class Pelicula {
         this.paisDeOrigen = paisDeOrigen;
         this.genero = genero;
         this.calificacion = calificacion;
+        this.funciones = funciones;
     }
     
     //metodos de seteo de cada atributo de la clase
@@ -101,5 +104,13 @@ public class Pelicula {
     
     public void setCalificacion(Calificacion calificacion){
         this.calificacion = calificacion;
+    }
+    
+    public List<Funcion> getFunciones(){
+        return this.funciones;
+    }
+    
+    public void setFunciones(List<Funcion> funciones){
+        this.funciones = funciones;
     }
 }
